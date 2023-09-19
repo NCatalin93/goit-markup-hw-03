@@ -40,8 +40,10 @@ img {
 
 /* Container header*/
 .container {
-    width: 1200px;
+    max-width: 1200px 100vw;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .global-header .container {
@@ -49,7 +51,8 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .container-nav {
@@ -297,7 +300,8 @@ img {
 .global-footer .container {
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .global-footer .container .full-adress {
@@ -356,9 +360,6 @@ img {
 
 /* Portfolio page */
 /* Buttons sub-section */
-.portfolio-page h1{
-    color: transparent;
-}
 
 .portfolio-page .closed-buttons button{
     font-weight: 500;
@@ -383,7 +384,6 @@ img {
     font-size: 18px;
     font-weight: var(--titles-font-weight);
     line-height: 2;
-    font-weight: var(--titles-font-weight);
 }
 
 .portfolio-page p {
@@ -395,7 +395,8 @@ img {
 .portfolio-page .container{
     display: flex;
     flex-direction: column;
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-page .container .closed-buttons {
@@ -409,16 +410,16 @@ img {
 .container .opened-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
     padding: 0;
 }
 
 .container .opened-buttons .item {
-    flex-basis: calc((100%-90px)/9);
+    flex-basis: calc((100%-30px)/3);
     border: 1px solid #EEEEEE;
 }
 
 .description-item {
     padding: 20px 24px;
+    gap: 4px;
 }
