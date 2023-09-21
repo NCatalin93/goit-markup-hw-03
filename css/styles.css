@@ -40,7 +40,7 @@ img {
 
 /* Container header*/
 .container {
-    max-width: 1200px 100vw;
+    width: 1200px 100vw;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -156,7 +156,7 @@ img {
     background-color: var(--fill-color);
 }
 
-.main-head .container {
+.main-head .section {
     padding:200px 0;
     text-align: center;
 }
@@ -190,12 +190,18 @@ img {
 }
 /* Values sub-section */
 
-.values .container,
-.activities .container,
-.team-members .container{
+.values .section,
+.activities .section,
+.team-members .section{
     padding-top: 94px;
 }
 
+.section {
+    width: 1200px 100vw;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .visually-hidden{
   position: absolute;
@@ -210,13 +216,13 @@ img {
   overflow: hidden;
 }
 
-.values .container ul{
+.values .section ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.values .container li {
+.values .section li {
     width: 270px;
 }
 
@@ -232,11 +238,11 @@ img {
 }
 /* Activities sub-section */
 
-.activities .container {
+.activities .section {
     padding-bottom: 94px;
 }
 
-.activities .container ul {
+.activities .section ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -256,19 +262,18 @@ img {
     background-color: var(--fill-second-color);
 }
 
-.team-members .container {
+.team-members .section {
     padding-bottom: 94px;
 }
 
-.team-members .container .member-list {
+.team-members .section .member-list {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     padding: 0;
     margin: 0;
 }
 
-.team-members .container .item {
+.team-members .section .item {
     padding: 30px 61.5px;
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
@@ -392,14 +397,14 @@ img {
     color: var(--backup-text-color);
 }
 
-.portfolio-page .container{
+.portfolio-page .section {
     display: flex;
     flex-direction: column;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.portfolio-page .container .closed-buttons {
+.portfolio-page .section .closed-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -407,14 +412,15 @@ img {
     padding: 0 342px 50px 342px;
 }
 
-.container .opened-buttons {
+.section .opened-buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
     padding: 0;
 }
 
-.container .opened-buttons .item {
+.section .opened-buttons .item {
     flex-basis: calc((100%-30px)/3);
     border: 1px solid #EEEEEE;
 }
