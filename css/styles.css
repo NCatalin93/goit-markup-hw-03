@@ -40,7 +40,7 @@ img {
 
 /* Container header*/
 .container {
-    width: 1200px 100vw;
+    max-width: 1200px 100vw;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -197,7 +197,7 @@ img {
 }
 
 .section {
-    width: 1200px 100vw;
+    max-width: 1200px 100vw;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -220,6 +220,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap:30px;
 }
 
 .values .section li {
@@ -247,6 +248,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
+    gap: 30px;
 }
 
 
@@ -271,6 +273,7 @@ img {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    gap:30px;
 }
 
 .team-members .section .item {
@@ -421,7 +424,7 @@ img {
 }
 
 .section .opened-buttons .item {
-    flex-basis: calc((100%-30px)/3);
+    flex-basis: calc((100%-60px)/3);
     border: 1px solid #EEEEEE;
 }
 
