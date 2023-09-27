@@ -225,6 +225,7 @@ img {
 
 .values .section li {
     width: 270px;
+    flex-grow: 1;
 }
 
 .values h3 {
@@ -251,6 +252,10 @@ img {
     gap: 30px;
 }
 
+.activities .section ul li {
+    flex-grow: 1;
+    background-color: red;
+}
 
 .activities h2{
     font-size: 36px;
@@ -274,6 +279,10 @@ img {
     padding: 0;
     margin: 0;
     gap:30px;
+}
+
+.team-members .section .member-list li{
+    flex-grow: 1;
 }
 
 .team-members .section .item {
@@ -418,7 +427,6 @@ img {
 .section .opened-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
     padding: 0;
 }
@@ -426,6 +434,7 @@ img {
 .section .opened-buttons .item {
     flex-basis: calc((100%-60px)/3);
     border: 1px solid #EEEEEE;
+    flex-grow: 1;
 }
 
 .description-item {
